@@ -1,0 +1,4 @@
+digraph G {
+    S [label="P1, Q1\na, b = 0, 0"]
+
+}

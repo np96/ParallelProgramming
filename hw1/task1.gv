@@ -1,0 +1,41 @@
+digraph G {
+    S [label="P1, Q1\na, b = 0, 0"]
+    P2Q1 [label="P2, Q1\n a, b = 1, 0"]
+    S -> P2Q1
+    P3Q1 [label="P3, Q1\n a, b = 1, 0"]
+    P2Q1 -> P3Q1
+    P4Q1 [label="P4, Q1\n a, b = 1, 0"]
+    P3Q1 -> P4Q1
+    P4Q1 -> S
+    P4Q2 [label="P4, Q2\n a, b = 1, 1"]
+    P4Q1 -> P4Q2
+    P1Q2 [label="P1, Q2\n a, b = 0, 1"]
+    S -> P1Q2
+    P2Q2 [label="P2, Q2\na, b = 1, 1"]
+    P1Q2 -> P2Q2
+    P2Q1 -> P2Q2
+    P2Q2 -> P2Q2
+    P2Q3 [label="P2, Q3\n a, b = 1, 1"]
+    P2Q2 -> P2Q3
+    P2Q3 -> P2Q3
+    P2Q3 -> P2Q1
+    P1Qs [label="P1, Qs\n a, b = 0, 1"]
+    P1Q2 -> P1Qs
+    P4Q3 [label="P4, Q3\n a, b = 1, 1"]
+    P4Q2 -> P4Q3
+    P4Q3 -> P4Q1
+    P3Q2 [label="P3, Q2\n a, b = 1, 1"]
+    P3Q1 -> P3Q2
+    P3Q2 -> P4Q2 
+    P2Qs [label="P2, Qs\n a, b = 1, 1"]
+    P1Qs -> P2Qs
+    P2Qs -> P2Qs
+    P3Q3 [label="P3, Q3\n a, b = 1, 1"]
+    P3Q2 -> P3Q3
+    P3Q3 -> P3Q1
+    P3Q3 -> P4Q3
+    P1Q3 [label="P1, Q3\n a, b = 0, 1"]
+    P4Q3 -> P1Q3
+    P1Q3 -> S
+    P1Q3 -> P2Q3
+}
